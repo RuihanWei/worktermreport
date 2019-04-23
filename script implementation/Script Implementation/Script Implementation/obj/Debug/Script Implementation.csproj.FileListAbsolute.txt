@@ -1,0 +1,10 @@
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\bin\Debug\Script Implementation.exe.config
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\bin\Debug\Script Implementation.exe
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\bin\Debug\Script Implementation.pdb
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\obj\Debug\Script Implementation.csprojAssemblyReference.cache
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\obj\Debug\Script Implementation.csproj.CoreCompileInputs.cache
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\obj\Debug\Script Implementation.csproj.CopyComplete
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\obj\Debug\Script Implementation.exe
+C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\script implementation\Script Implementation\Script Implementation\obj\Debug\Script Implementation.pdb

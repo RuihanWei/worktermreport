@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -44,8 +45,55 @@ namespace Script_Implementation
 				file.WriteLine(writingstr);
 			}
 
+			List<string> input = new List<string>{
+				"Brachiosaurus",
+				"Amargasaurus",
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus" ,
+				"Mamenchisaurus"
+			};
 
+			GenerateConfiguration(input);
+
+			string[] _input = new string[2];
+			_input[0] = @"C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\hardware\hardware1\firmware\version2.0\Bitmap.bmp";
+			_input[1] = @"C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\hardware\hardware1\firmware\Bitmap.bmp";
+
+			MoveBmp(_input);
 		}
+
+		private static void MoveBmp(string[] input)
+		{
+			File.Move(input[0], input[1]);
+		}
+
+		static void GenerateConfiguration(List<string> values)
+		{
+			var myDictionary = new Dictionary<string, string>
+			{
+				{"a", values[0]},
+				{"f", values[1]},
+				{"s", values[2]},
+				{"r", values[3]},
+				{"d", values[4]},
+				{"v", values[5]},
+				{"ds", values[6]},
+				{"vc", values[7]},
+				{"ew", values[8]}
+			};
+		}
+
+
+
 	}
 
 	class DynatreeItem

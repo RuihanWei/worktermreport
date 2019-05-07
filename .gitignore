@@ -1,1 +1,23 @@
 script implementation/Script Implementation/.vs/
+Generic Implementation/.vs/Generic Implementation/v15/.suo
+*.dll
+*.pdb
+*.cache
+Generic Implementation/.vs/Generic Implementation/v15/Server/sqlite3/db.lock
+Generic Implementation/.vs/Generic Implementation/v15/Server/sqlite3/storage.ide
+Generic Implementation/.vs/Generic Implementation/v15/Server/sqlite3/storage.ide-shm
+Generic Implementation/.vs/Generic Implementation/v15/Server/sqlite3/storage.ide-wal
+Generic Implementation/Generic Implementation/obj/Generic Implementation.csproj.nuget.g.props
+Generic Implementation/Generic Implementation/obj/Debug/netcoreapp2.1/Generic Implementation.AssemblyInfo.cs
+Generic Implementation/Generic Implementation/obj/Generic Implementation.csproj.nuget.g.targets
+Generic Implementation/Generic Implementation/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+Generic Implementation/Generic Implementation/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Generic Implementation/Generic Implementation/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+Generic Implementation/Generic Implementation/obj/Debug/netcoreapp2.1/Generic Implementation.csproj.FileListAbsolute.txt
+Generic Implementation/Generic Implementation/obj/project.assets.json
+script implementation/Script Implementation/Script Implementation/obj/Debug/Script Implementation.csproj.FileListAbsolute.txt
+script implementation/Script Implementation/Script Implementation/bin/Debug/Script Implementation.exe
+script implementation/Script Implementation/Script Implementation/obj/Debug/Script Implementation.exe
+Generic Implementation/Generic Implementation/bin/Debug/netcoreapp2.1/Generic Implementation.deps.json
+Generic Implementation/Generic Implementation/bin/Debug/netcoreapp2.1/Generic Implementation.runtimeconfig.dev.json
+Generic Implementation/Generic Implementation/bin/

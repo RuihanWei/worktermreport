@@ -6,5 +6,6 @@ namespace Generic_Implementation.DataContainers
 {
 	class GenConfigDC : DataContainerBase<ConfigP>
 	{
+
 	}
 }

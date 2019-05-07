@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Generic_Implementation.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,9 +11,18 @@ namespace Generic_Implementation.ConsoleProcessors
 		{
 		}
 
-		protected override void InitiateProcess()
+		public override void InitiateProcess()
 		{
-			throw new NotImplementedException();
+			Console.WriteLine("");
+			Console.WriteLine("");
+
+			Console.WriteLine("");
+
+			Console.WriteLine("");
+
+			Console.WriteLine("");
+			Console.WriteLine("");
+			Console.WriteLine("");
 		}
 	}
 }

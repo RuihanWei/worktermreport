@@ -8,16 +8,7 @@ namespace Generic_Implementation.DataContainers
 	{
 		public PopJsonDC()
 		{
-		}
 
-		public override bool IsComplete(out string _error)
-		{
-			throw new NotImplementedException();
-		}
-
-		public override bool TrySetValue(string _IValue, out string _error)
-		{
-			throw new NotImplementedException();
 		}
 	}
 }

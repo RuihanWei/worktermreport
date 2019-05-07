@@ -12,6 +12,6 @@ namespace Generic_Implementation.ConsoleProcessors
         
         private IInputOutput InputOutput;
         private ControllerBase<T> Controller;
-        protected abstract void InitiateProcess();
+        public abstract void InitiateProcess();
     }
 }

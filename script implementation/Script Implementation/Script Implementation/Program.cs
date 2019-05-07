@@ -12,9 +12,11 @@ namespace Script_Implementation
 		{
 			InputOutput = new ConsoleIO();
 
+
+			// json population
 			InputOutput.WriteLine("stuff");
 
-			string directory = @"G:\hardware";
+			string directory = @"C:\ProgramData\hardware";
 
 			// Create a new DirectoryInfo object.
 			DirectoryInfo dir = new DirectoryInfo(directory);
@@ -43,6 +45,8 @@ namespace Script_Implementation
 			{
 				file.WriteLine(writingstr);
 			}
+
+
 
 			List<string> input = new List<string>{
 				"Brachiosaurus",
@@ -90,9 +94,6 @@ namespace Script_Implementation
 				{"ew", values[8]}
 			};
 		}
-
-
-
 	}
 
 	class DynatreeItem

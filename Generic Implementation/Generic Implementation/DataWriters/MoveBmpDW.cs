@@ -9,7 +9,7 @@ namespace Generic_Implementation.DataWriters
 	{
 		public override void Write(DataContainerBase<MoveBmpP> _dataContainer)
 		{
-			throw new NotImplementedException();
+
 		}
 	}
 }

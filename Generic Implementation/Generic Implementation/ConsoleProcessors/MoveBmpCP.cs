@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Generic_Implementation.ConsoleProcessors
 {
-	public class PopJsonCP : ConsoleProcessorBase<JsonCreatorP>
+	public class MoveBmpCP : ConsoleProcessorBase<MoveBmpP>
 	{
-		public PopJsonCP(IInputOutput _inputOutput) : base(_inputOutput)
+		public MoveBmpCP(IInputOutput _inputOutput) : base(_inputOutput)
 		{
+
 		}
 
 		public override void InitiateProcess()
@@ -22,6 +23,7 @@ namespace Generic_Implementation.ConsoleProcessors
 			Console.WriteLine("");
 			Console.WriteLine("");
 			Console.WriteLine("");
+
 		}
 	}
 }

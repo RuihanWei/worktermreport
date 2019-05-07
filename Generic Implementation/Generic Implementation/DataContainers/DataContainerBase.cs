@@ -6,11 +6,23 @@ namespace Generic_Implementation.DataContainers
 {
     public abstract class DataContainerBase<T> where T:Enum
     {
-        public Dictionary<Enum, string> Values;
-        public bool TrySetValue(T type, string _IValue, out string _error)
+		public DataContainerBase()
+		{
+		}
+
+        public Dictionary<Enum, string> Values = new Dictionary<Enum, string>();
+        public bool TrySetValue(T type, string _Value, out string _error)
 		{
 			_error = "";
-			Values[type] = _IValue;
+			if (Values.ContainsKey(type))
+			{
+				Values[type] = _Value;
+			}
+			else
+			{
+				Values.Add(type, _Value);
+			}
+
 			return true;
 		}
         public bool IsComplete(out string _error)

@@ -41,12 +41,10 @@ namespace Script_Implementation
 				writingstr += VARIABLE.JsonToDynatree();
 			}
 
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"G:\writeHere\newjson.json"))
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\ProgramData\hardware\writeHere\newjson.json"))
 			{
 				file.WriteLine(writingstr);
 			}
-
-
 
 			List<string> input = new List<string>{
 				"Brachiosaurus",
@@ -68,15 +66,21 @@ namespace Script_Implementation
 			GenerateConfiguration(input);
 
 			string[] _input = new string[2];
-			_input[0] = @"C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\hardware\hardware1\firmware\version2.0\Bitmap.bmp";
-			_input[1] = @"C:\Users\Tobyw\OneDrive - University of Waterloo\2A.5\Work Term Report\hardware\hardware1\firmware\Bitmap.bmp";
+			_input[0] = @"C:\ProgramData\hardware\hardware1\firmware\version2.0\Bitmap.bmp";
+			_input[1] = @"C:\ProgramData\hardware\hardware1\firmware\Bitmap.bmp";
 
 			MoveBmp(_input);
 		}
 
 		private static void MoveBmp(string[] input)
 		{
+			if (System.IO.File.Exists(input[1]))
+			{
+				System.IO.File.Delete(input[1]);
+			}
+
 			File.Move(input[0], input[1]);
+			System.IO.File.Copy(input[1], input[0], true);
 		}
 
 		static void GenerateConfiguration(List<string> values)
@@ -93,6 +97,10 @@ namespace Script_Implementation
 				{"vc", values[7]},
 				{"ew", values[8]}
 			};
+
+			using (StreamWriter file = new StreamWriter(@"C:\ProgramData\hardware\ini.txt"))
+				foreach (var entry in myDictionary)
+					file.WriteLine("[{0} {1}]", entry.Key, entry.Value);
 		}
 	}
 

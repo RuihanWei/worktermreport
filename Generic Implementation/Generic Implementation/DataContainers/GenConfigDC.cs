@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Generic_Implementation.DataContainers
 {
-	class GenConfigDC : DataContainerBase<ConfigP>
+	public class GenConfigDC : DataContainerBase<ConfigP>
 	{
 
 	}

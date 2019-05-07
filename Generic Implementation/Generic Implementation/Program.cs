@@ -1,5 +1,7 @@
 ﻿using Generic_Implementation.ConsoleProcessors;
 using Generic_Implementation.Controllers;
+using Generic_Implementation.DataContainers;
+using Generic_Implementation.DataWriters;
 
 namespace Generic_Implementation
 {
@@ -25,8 +27,11 @@ namespace Generic_Implementation
         static void Main(string[] _args)
         {
 			GenConfigCon gen = new GenConfigCon();
+			gen.Data = new GenConfigDC();
 			MoveBmpCon mov = new MoveBmpCon();
+			mov.Data = new MoveBmpDC();
 			PopJsonCon json = new PopJsonCon();
+			json.Data = new PopJsonDC();
 
 			GenConfigCP genCP = new GenConfigCP(InputOutput);
 			genCP.InitiateProcess();
@@ -35,21 +40,33 @@ namespace Generic_Implementation
 			PopJsonCP popJsonDC = new PopJsonCP(InputOutput);
 			popJsonDC.InitiateProcess();
 
-			gen.TrySetValue(ConfigP.stuff, "", out string _error);
-			mov.TrySetValue(MoveBmpP.stuff, "", out string _error2);
-			json.TrySetValue(JsonCreatorP.stuff, "", out string _error3);
+			string _error = "";
 
 			gen.TrySetValue(ConfigP.stuff, "", out _error);
-			mov.TrySetValue(MoveBmpP.stuff, "", out _error2);
-			json.TrySetValue(JsonCreatorP.stuff, "", out _error3);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error);
 
 			gen.TrySetValue(ConfigP.stuff, "", out _error);
-			mov.TrySetValue(MoveBmpP.stuff, "", out _error2);
-			json.TrySetValue(JsonCreatorP.stuff, "", out _error3);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error); gen.TrySetValue(ConfigP.stuff, "", out _error);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error); gen.TrySetValue(ConfigP.stuff, "", out _error);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error); gen.TrySetValue(ConfigP.stuff, "", out _error);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error); gen.TrySetValue(ConfigP.stuff, "", out _error);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error); gen.TrySetValue(ConfigP.stuff, "", out _error);
+			mov.TrySetValue(MoveBmpP.stuff, "", out _error);
+			json.TrySetValue(JsonCreatorP.stuff, "", out _error);
 
-			gen.TrySetValue(ConfigP.stuff, "", out _error);
-			mov.TrySetValue(MoveBmpP.stuff, "", out _error2);
-			json.TrySetValue(JsonCreatorP.stuff, "", out _error3);
+
+			GenConfigDW confdw = new GenConfigDW();
+			confdw.Write(gen.Data);
+			MoveBmpDW mvbmpdw = new MoveBmpDW();
+			mvbmpdw.Write(mov.Data);
+			PopJsonDW jsonDw = new PopJsonDW();
+			jsonDw.Write(json.Data);
 		}
 	}
 }

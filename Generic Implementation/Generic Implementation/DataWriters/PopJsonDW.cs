@@ -9,11 +9,8 @@ namespace Generic_Implementation.DataWriters
 	{
 		public override void Write(DataContainerBase<JsonCreatorP> _dataContainer)
 		{
-			// json population
-
 			string directory = @"C:\ProgramData\hardware";
 
-			// Create a new DirectoryInfo object.
 			DirectoryInfo dir = new DirectoryInfo(directory);
 
 			if (!dir.Exists)
@@ -36,7 +33,7 @@ namespace Generic_Implementation.DataWriters
 				writingstr += VARIABLE.JsonToDynatree();
 			}
 
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"G:\writeHere\newjson.json"))
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\ProgramData\hardware\writeHere\newjson.json"))
 			{
 				file.WriteLine(writingstr);
 			}

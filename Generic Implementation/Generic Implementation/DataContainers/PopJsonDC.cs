@@ -8,7 +8,6 @@ namespace Generic_Implementation.DataContainers
 	{
 		public PopJsonDC()
 		{
-
 		}
 	}
 }

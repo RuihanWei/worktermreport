@@ -21,3 +21,6 @@ script implementation/Script Implementation/Script Implementation/obj/Debug/Scri
 Generic Implementation/Generic Implementation/bin/Debug/netcoreapp2.1/Generic Implementation.deps.json
 Generic Implementation/Generic Implementation/bin/Debug/netcoreapp2.1/Generic Implementation.runtimeconfig.dev.json
 Generic Implementation/Generic Implementation/bin/
+LibraryApproach/.vs/
+LibraryApproach/LibraryApproach/bin/
+LibraryApproach/LibraryApproach/obj/
